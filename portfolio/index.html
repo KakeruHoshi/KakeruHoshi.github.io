@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kakeru Hoshi/星　翔</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/stars.png" rel="icon">
+  <link href="img/stars.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Instant
+    Template URL: https://templatemag.com/instant-bootstrap-personal-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 800; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">KAKERU</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works" class="smoothscroll">Portfolio</a></li>
+          <li><a href="#social" class="smoothscroll">SNS</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <h1>Kakeru Hoshi</h1>
+          <h4>WEB DESIGNER & VIDEO EDITOR</h4>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <section id="about"></section>
+  <div class="container">
+    <div class="row centered mt">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1>About</h1>
+        <p>Hello, It's Kakeru I was born in 1999 and raised up at Machida in Japan so I'm 21 years old. </p>
+        <p>I had played handball as a club activity for about 10 years, and was the captain of the East Tokyo Selected Team in high school. (The team lost to West Tokyo for the first time in nine years though.)</p>
+        <p>I have been studying in order to become a web programmer for now.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="works"></section>
+  <div class="container">
+    <div class="row centered mt mb">
+      <h1>Portfolio</h1>
+      <h4>- web -</h4>
+
+      <div class="col-lg-8 col-md-8 col-sm-8 gallery">
+        <a href="http://www.ne.senshu-u.ac.jp/~proj2020-8/"><img src="img/portfolio/odagiri_project.png" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="http://alinkoayuayu.html.xdomain.jp/"><img src="img/portfolio/yuppo.png" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="img/portfolio/coming_soon.jpg" class="img-responsive"></a>
+      </div>
+
+      <h4 class="video">- video -</h4>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="https://youtu.be/6DMGTnJkgpc"><img src="img/portfolio/vegan.jpg" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="https://youtu.be/4slGw758iGM"><img src="img/portfolio/america.jpg" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="img/portfolio/coming_soon.jpg" class="img-responsive"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="social">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://www.facebook.com/profile.php?id=100012526603312"><i class="fa fa-dribbble"></i></a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://www.facebook.com/profile.php?id=100012526603312"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://twitter.com/kakeruster"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://www.instagram.com/kakeruhoshi73/?hl=ja"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://www.instagram.com/kakeruhoshi73/?hl=ja"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+          <a href="https://twitter.com/kakeruster"><i class="fa fa-tumblr"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Instant</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/instant-bootstrap-personal-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Instant template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
