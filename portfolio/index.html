@@ -10,11 +10,12 @@
 
   gtag('config', 'G-CHX0KZB7L4');
 </script>
+    
   <meta charset="utf-8">
-  <title>Kakeru Hoshi/星　翔</title>
+  <title>Kakeru Hoshi/星　翔のポートフォリオサイト</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="KakeruHoshi,星翔,ポートフォリオ" name="keywords">
+  <meta content="星翔（Kakeru　Hoshi）の紹介サイトです。彼が作ったポートフォリオを気軽にみることができ、気になった場合は最新の作品が投稿されているSNSに飛ぶこともできます。ぜひ一度訪れてみてください。" name="description">
 
   <!-- Favicons -->
   <link href="img/stars.png" rel="icon">
@@ -23,21 +24,17 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Template Name: Instant
-    Template URL: https://templatemag.com/instant-bootstrap-personal-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <!-- ＃リンクのスムーズスクロール -->
     <script>
@@ -49,7 +46,7 @@
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
           var position = target.offset().top;
-          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          $j('body,html').animate({scrollTop:position}, speed, 'swing');
           return false;
         });
       });
@@ -57,131 +54,111 @@
 </head>
 
 <body>
-
-  <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <header>
+      <video width="100%" autoplay muted playsinline src="hitech_text.mp4" ></video>
+    </header>
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="index.html">Kakeru</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#headerwrap">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works" class="smoothscroll">Portfolio</a></li>
-          <li><a href="#social" class="smoothscroll">SNS</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
 
-
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <h1>Kakeru Hoshi</h1>
-          <h4>WEB DESIGNER & VIDEO EDITOR</h4>
+        <section id="profile"></section>
+        <h1>-　About　-</h1>
+        <div class="profile">
+            <img src="img/kakeru_tower.jpg" alt="星翔/Kakeru Hoshi">
+            <div class="introduction">
+                <div class="name">
+                    <h2>Kakeru Hoshi <span>- 星 翔 -</span></h2>
+                </div>
+                <div class="occupation">
+                    <h4>webエンジニア/映像クリエイター</h4>
+                </div>
+                <div class="detail">
+                    <p>
+                      専修大学ネットワーク情報学部3年 21歳 ハンドボーラーとして学生時代を過ごしてきたが、大学のハンドボール部を引退後、様々な活動をスタート。来年休学予定で、一年後どんな姿になっているのか楽しみである。
+                    </p>
+                    <div class="carrer">
+                      <h3>I'm a member of...</h3>
+                      <ul>
+                        <li>★MICインターン/マーケティング</li>
+                        <li>★いえらぶGROUPインターン/エンジニア</li>
+                        <li>★黒崎BASEインターン</li>
+                        <li>★GeekSalon/プログラミングスクール</li>
+                        <li>★ぐろーまる/ボランティアNICE広報</li>
+                        <li>★CMC/人生を考える学校<br></li>
+                        <li>★元小田切プロジェクトweb＋映像担当<br></li>
+                        <li>★元ハンドボール東東京選抜キャプテン<br></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="skills">
+          <div class="skill">
+            <h3>English</h3>
+            <i class="fas fa-language skill_icon"></i>
+            <p>
+              高校時代時に４ヶ月のカナダ留学あり、
+              大学２年次にはカンボジアに英語を英語
+              の教育ボランティア。TOEIC705点。
+              英語の目標は翻訳家になれるレベル。
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Programming</h3>
+            <i class="fas fa-laptop-code skill_icon"></i>
+            <p>
+              大学１年次に初めてプログラミングに触れる
+              ２年次にボランティア団体ゆっぽの会のサイトを制作し、
+              ３年次では小田切プロジェクトのサイトを制作した。
+              現在webエンジニアとして長期インターン中。
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Video</h3>
+            <i class="fas fa-video-slash skill_icon"></i>
+            <p>
+              ２年次に映像制作を始める。授業での映像制作を経て、
+              ３年次にはプロジェクションマッピングのプロジェクトの参画する。
+              作った映像はインスタグラムに投稿されている。
+            </p>
+          </div>
+        </div>
     </div>
-    <!-- /container -->
-  </div>
-
-  <section id="about"></section>
-  <div class="container">
-    <div class="row centered mt">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h1>About</h1>
-        <p>専修大学ネットワーク情報学部3年の星翔21歳。10年間続けてきたハンドボールをついに引退し、新しく志すのはwebエンジニア。業務委託とかやってみたい。 </p>
-        <p>キーワードは英語/webプログラミング/動画編集/ボランティア/ハンドボール/</p>
-        <p>とりあえずの目標はwebエンジニアとして海外インターン。</p>
-        <!-- <p>Hello, It's Kakeru I was born in 1999 and raised up at Machida in Japan so I'm 21 years old. </p>
-        <p>I had played handball as a club activity for about 10 years, and was the captain of the East Tokyo Selected Team in high school. (The team lost to West Tokyo for the first time in nine years though.)</p>
-        <p>I have been studying in order to become a web programmer for now.</p> -->
-      </div>
-
-    </div>
-  </div>
 
   <section id="works"></section>
   <div class="container">
-    <div class="row centered mt mb">
+    <div class="portfolio_head">
       <h1>Portfolio</h1>
-      <h4>- web -</h4>
-
-      <div class="col-lg-8 col-md-8 col-sm-8 gallery">
-        <a href="http://www.ne.senshu-u.ac.jp/~proj2020-8/"><img src="img/portfolio/odagiri_project.png" class="img-responsive"></a>
+      <h2>web</h2>
+    </div>
+    <div class="web_works">
+      <div class="web_works_left">
+        <img src="img/portfolio/america.jpg" alt="">
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="http://alinkoayuayu.html.xdomain.jp/"><img src="img/portfolio/yuppo.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="works.html"><img src="img/portfolio/coming_soon.jpg" class="img-responsive"></a>
-      </div>
-
-      <h4 class="video">- video -</h4>
-
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://youtu.be/6DMGTnJkgpc"><img src="img/portfolio/vegan.jpg" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://youtu.be/4slGw758iGM"><img src="img/portfolio/america.jpg" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="works.html"><img src="img/portfolio/coming_soon.jpg" class="img-responsive"></a>
+      <div class="web_works_right">
+        <img src="img/portfolio/america.jpg" alt="">
+        <img src="img/portfolio/america.jpg" alt="">
       </div>
     </div>
+    <div class="portfolio_head">
+      <h2>video</h2>
+    </div>
+    <div class="video_works">
+      <img src="img/portfolio/america.jpg" alt="">
+      <img src="img/portfolio/america.jpg" alt="">
+      <img src="img/portfolio/america.jpg" alt="">
+    </div>
+
   </div>
 
-  <div id="social">
+  <div id="diary">
     <div class="container">
-      <div class="row centered">
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="https://linktr.ee/kakeruhoshi73"><i class="fa fa-tree "></i></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="https://www.facebook.com/profile.php?id=100012526603312"><i class="fa fa-facebook"></i></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="https://twitter.com/kakeruster"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="https://www.instagram.com/kakeruhoshi73/?hl=ja"><i class="fa fa-instagram"></i></a>
-        </div>
-      </div>
+      <h1>KakeruDiary</h1>
+      <a class="twitter-timeline" width="70%" height="600px" href="https://twitter.com/kakeruhoshi22?ref_src=twsrc%5Etfw">Tweets by home</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 
-  <div id="copyrights">
-    <div class="container">
-      <p>
-        &copy; Copyrights <strong>Instant</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/instant-bootstrap-personal-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Instant template by <a href="https://templatemag.com/">TemplateMag</a>
-      </div>
-    </div>
-  </div>
-  <!-- / copyrights -->
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
+  <footer>
+    <a href="https://linktr.ee/kakeruhoshi73"><i class="fa fa-tree "></i></a>
+  </footer>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
