@@ -286,8 +286,8 @@ img {
 }
 
 .skill{
+	margin-top: 4rem;
 	text-align: center;
-	/* margin: 0 4rem; */
 }
 
 .skill_icon{
@@ -346,7 +346,7 @@ img {
 		color: #8a8a8a;
 	}
 	.skill{
-		margin: 0;
+		margin: 2rem 0 0 0;
 	}
 	.skill h3{
 		font-size: 1rem;
@@ -433,16 +433,6 @@ img {
 	background-color: #fff;
 	text-align: center;
 	margin-bottom: 100px;
-}
-
-@media (max-width: 768px){
-	#diary {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		background-color: #fff;
-		text-align: center;
-		margin-bottom: 100px;
-	}
 }
 
 footer {
