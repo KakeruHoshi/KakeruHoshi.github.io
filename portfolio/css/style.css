@@ -329,6 +329,11 @@ img {
 	.introduction {
 		margin: 0;
 	}
+	.detail{
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
 	.carrer{
 		margin: 2rem 0;
 		padding: 0;
@@ -342,6 +347,10 @@ img {
 	}
 	.skill{
 		margin: 0;
+	}
+	.skill h3{
+		font-size: 1rem;
+		width: 100%;
 	}
 }
 
