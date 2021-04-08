@@ -174,7 +174,7 @@ h1 {
 	text-align: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
 	body {
 		font-family: "LiHei Pro", sans-serif;
 		font-weight: 300;
@@ -304,7 +304,7 @@ img {
 	color: #8a8a8a;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
 	.profile {
 		display: flex;
 		flex-direction: column;
@@ -397,7 +397,7 @@ img {
 	width: 20rem;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
 	.web_works, .video_works{
 		display: flex;
 		flex-direction: column;
