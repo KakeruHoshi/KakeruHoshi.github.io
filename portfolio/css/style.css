@@ -454,3 +454,35 @@ footer i:hover {
 .box_shadow {
 	box-shadow: 0 10px 25px 0 rgba(0, 0, 60, 0.5);
   }
+
+
+/* メモ用 */
+.section {
+	width: 80%;
+	padding: 4rem;
+	background-color:navajowhite;
+	border-radius: 3rem;
+	color: #fff !important;
+}
+
+.section h2 {
+	padding: 1rem 0;
+	font-size: 2.5rem;
+	color: red;
+}
+.section h3 {
+	padding: 0.5rem 0;
+	font-size: 2rem;
+	color: orange
+}
+.section h4 {
+	padding: 1rem 0 1rem 1rem;
+	font-size: 1.5rem;
+}
+.section p {
+	font-size: 1.5rem;
+	margin-left: 4rem;
+}
+.section span {
+	font-size: small;
+}

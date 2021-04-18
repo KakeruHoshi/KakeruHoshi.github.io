@@ -1,13 +1,54 @@
-<h2>rails</h2>
-<h3>パラメータについて</h3>
-<p>ユーザーが入力した情報を受け取るのがparams。<br>
-    paramsの中身は↓こんな感じ<br>
-    （ハッシュ）<br>
-    params = {<br>
-    　　"utf-8" => ✔︎,<br>
-    　　"key" => "value",<br>
-    　　"tweets" => {<br>
-    　　　　"body" => "これがツイートの中身だお"<br>
-    　　}<br>
-    }<br>
-</p>
+<header>
+    <link href="css/style.css" rel="stylesheet">
+</header>
+
+<div class="section">
+    <h2>rails</h2>
+    <h3>・パラメータについて</h3>
+    <p>ユーザーが入力した情報を受け取るのがparams。<br>
+        paramsの中身は↓こんな感じ<br>
+        （ハッシュ）<br>
+        params = {<br>
+        　　"utf-8" => ✔︎,<br>
+        　　"key" => "value",<br>
+        　　"tweets" => {<br>
+        　　　　"body" => "これがツイートの中身だお"<br>
+        　　}<br>
+        }<br>
+    </p>
+    <br><br>
+
+    <h3>・View⇨controllerの値受け渡し</h3>
+    <a href="https://poyopoyo0.hatenablog.com/entry/2016/02/29/100431">リンク</a>
+    <h4>基本</h4>
+    <p>
+        「View」　<br>
+        example_path(user_id: "1", company_id: "3") <br>
+        ↓ <br>
+        ↓ Parameters {"user_id"=>"1", "company_id"=>"3"} <br>
+        ↓ <br>
+        「Controller」<br>
+        params[:user_id] <br>
+        params[:company_id] <br><br>
+    </p>
+    <h4>変数渡し</h4>
+    <p>
+        「View」　<br>
+        <%= link_to "リンク名", example_path(@ex) %><br><br>
+        「Controller」 <br>
+        def example <br>
+        　　@ex = Ex.find_by(id: params[:format])  <span>*.find_byはデータを指定して取り出す。</span><br>
+        end <br>
+    </p><br>
+    <h4>パラメータを一つだけ単体渡し</h4>
+    <p>
+        <%= hidden_field_tag :email, @user.email %>
+    </p>
+    
+    <h3>・デバック</h3>
+    <p>
+        logger.debug('####################') <br>
+        logger.debug(params) <br>
+        logger.debug('####################') <br>
+    </p>
+</div>
