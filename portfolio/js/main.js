@@ -19,11 +19,8 @@ $(function(){
     // スクロールまたはロードするたびに実行
     $(window).on('scroll load', function(){
         var scroll_top = $(this).scrollTop();
-        console.log(scroll_top);
         var scroll_btm = scroll_top + $(this).height();
-        console.log(scroll_btm);
         var effect_pos = scroll_btm - effect_btm;
-        console.log(effect_pos);
 
         //エフェクトが発動したとき、子要素をずらしてフェードさせる
         $('.scroll-fade-row').each( function() {
@@ -34,7 +31,7 @@ $(function(){
                     transform: 'translateY(0)'
                 });
                 $(this).children().each(function(i){
-                    $(this).delay(100 + i*400).queue(function(){
+                    $(this).delay(100 + i*300).queue(function(){
                         $(this).css({
                             opacity: 1,
                             transform: 'translateY(0)'
