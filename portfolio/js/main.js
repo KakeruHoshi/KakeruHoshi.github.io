@@ -1,8 +1,8 @@
 $(function(){
 
-    var effect_btm = 300; // 画面下からどの位置でフェードさせるか(px)
+    var effect_btm = 250; // 画面下からどの位置でフェードさせるか(px)
     var effect_move = 50; // どのぐらい要素を動かすか(px)
-    var effect_time = 2000; // エフェクトの時間(ms) 1秒なら1000
+    var effect_time = 500; // エフェクトの時間(ms) 1秒なら1000
 
     //親要素と子要素のcssを定義
     $('.scroll-fade-row').css({
@@ -31,7 +31,7 @@ $(function(){
                     transform: 'translateY(0)'
                 });
                 $(this).children().each(function(i){
-                    $(this).delay(100 + i*300).queue(function(){
+                    $(this).delay(100 + i*100).queue(function(){
                         $(this).css({
                             opacity: 1,
                             transform: 'translateY(0)'
@@ -65,7 +65,7 @@ $(function(){
                     opacity: 1
                 });
                 $(this).children().each(function(i){
-                    $(this).delay(100 + i*400).queue(function(){
+                    $(this).delay(100 + i*100).queue(function(){
                         $(this).css({
                             opacity: 1
                         }).dequeue();

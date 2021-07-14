@@ -373,6 +373,9 @@ img {
 	vertical-align: middle;
 	margin: 1.5rem;
 	width: 33rem;
+	overflow: hidden;
+  	background: #000;
+	transition-duration: 0.5s;
 }
 
 .web_works_right{
@@ -383,6 +386,14 @@ img {
 .web_works_right img{
 	width: 22rem;
 	margin: 0.7rem 0 0 0;
+	overflow: hidden;
+ 	background: #000;
+	transition-duration: 0.5s;
+}
+.web_works img:hover{
+transform: scale(1.1);
+transition-duration: 0.5s;
+opacity: 0.6;/*これを追加！*/
 }
 
 .video_works{
@@ -418,12 +429,15 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
-	.video_works img{
-		width: 20rem;
-		justify-content: center;
-		margin: 2rem 0 2rem;
-		vertical-align: middle;
-		text-align: center;
+	.video_works iframe{
+		opacity: 1;
+    width: 20rem;
+    justify-content: center;
+    margin: 2rem 0 2rem;
+    vertical-align: middle;
+    text-align: center;
+    transition: all 500ms ease 0s;
+    border-radius: 20px;
 	}
 }
 
