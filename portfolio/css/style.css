@@ -616,7 +616,6 @@ footer i:hover {
 	opacity: 0;
 	visibility: hidden;
 	transition: .6s;
-	overflow: auto;
   }
   .popup.is-show {
 	opacity: 1;
@@ -634,6 +633,8 @@ footer i:hover {
 	background-color: #fff;
 	z-index: 2;
 	transition: .8s ease;
+	height: calc(100% - 100px);
+    overflow: auto;
   }
   .is-show .popup-inner {
 	transform: translate(-50%,-50%);
@@ -690,6 +691,20 @@ footer i:hover {
 	  border-radius: 10px;
 	  margin: 20px 0;
 	  overflow: hidden;
+  }
+  @media (max-width: 1024px) {
+	  .card {
+		  width: 46%;
+	  }
+  }
+  @media (max-width: 599px) {
+	.popup-inner {
+		padding: 30px;
+	}
+	.card {
+		width: 100%;
+		height: 180px;
+	}
   }
   dt {
 	display: flex;
