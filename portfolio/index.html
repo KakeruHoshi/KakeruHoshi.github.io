@@ -31,11 +31,14 @@
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- ＃リンクのスムーズスクロール -->
     <script>
       $(function(){
@@ -46,7 +49,7 @@
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
           var position = target.offset().top;
-          $j('body,html').animate({scrollTop:position}, speed, 'swing');
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
           return false;
         });
       });
@@ -56,15 +59,72 @@
 <body>
     <header>
       <video width="100%" autoplay muted playsinline src="hitech_text.mp4" ></video>
+      <div class="ui-wrapper">
+        <ui class="header-nav">
+          <li class="profile-nav header-item"><a href="#profile">Profile</a></li>
+          <li class="skill-nav header-item"><a href="#skills">Skill</a></li>
+          <li class="works-nav header-item"><a href="#works">Portfolio</a></li>
+        </ui>
+      </div>
     </header>
     <div class="container">
       <!-- <h1>- News -</h1>
       <p style="text-align: center;"><a href="https://note.com/kuroneko22/n/n7a422b22b31e">記事が出ました。ぜひ見てください</a></p> -->
 
+        <div class="popup" id="js-popup">
+          <div class="popup-inner">
+            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+            <div class="popup-title">
+              今までに関わってきた作品
+            </div>
+            <div class="cards">
+              <dl class="card">
+                <a href="https://www.ielove-group.jp/" class="img-wrap">
+                  <img src="img/portfolio/ielove1.png" alt="いえらぶGROUP コーポレートサイト">
+                </a>
+                <dt>いえらぶGROUP <br> コーポレートサイト</dt>
+              </dl>
+              <dl class="card">
+                <a href="https://www.ielove.co.jp/" class="img-wrap">
+                  <img src="img/portfolio/ielove2.png" alt="いえらぶGROUP ポータルサイト">
+                </a>
+                <dt>いえらぶGROUP <br> ポータルサイト</dt>
+              </dl>
+              <dl class="card">
+                <a href="http://www.tokoton-navi.com/search_top/" class="img-wrap">
+                  <img src="img/portfolio/tokoton.png" alt="とことん車検ナビ">
+                </a>
+                <dt>とことん車検ナビ</dt>
+              </dl>
+              <dl class="card">
+                <a class="img-wrap">
+                  <img src="img/portfolio/niconico.png" alt="ニコニコレンタカー　フランチャイズ広報動画">
+                </a>
+                <dt>ニコニコレンタカー <br> フランチャイズ広報動画</dt>
+              </dl>
+              <dl class="card">
+                <a href="https://jobhuntkakeru.herokuapp.com/" class="img-wrap">
+                  <img src="img/portfolio/jobhunt.png" alt="GeekSalon　JobHunt">
+                </a>
+                <dt>Geek Salon <br> JobHunt（企業賞受賞）</dt>
+              </dl>
+              <dl class="card">
+                <a href="https://jobhuntkakeru.herokuapp.com/" class="img-wrap">
+                  <img src="img/portfolio/odagiri.png" alt="小田切プロジェクト２０２０｜専修大学ネットワーク情報学部">
+                </a>
+                <dt>小田切プロジェクト２０２０</dt>
+              </dl>
+            </div>
+          </div>
+          <div class="black-background" id="js-black-bg"></div>
+        </div>
+
         <section id="profile"></section>
         <h1>-　About　-</h1>
         <div class="profile">
-            <img src="img/kakeru_tower.jpg" alt="星翔/Kakeru Hoshi">
+          <div class="kakeru-img-wrapper">
+            <img src="img/kakeru.JPG" alt="星翔/Kakeru Hoshi">
+          </div>
             <div class="introduction">
                 <div class="name">
                     <h2>Kakeru Hoshi <span>- 星 翔 -</span></h2>
@@ -74,15 +134,14 @@
                 </div>
                 <div class="detail">
                     <p>
-                      専修大学ネットワーク情報学部４年 ２１歳 休学中　中〜大学までをハンドボール部に所属。現在はwebエンジニア兼映像クリエイターとして活動中。休学中の目標は海外で働く経験を積むことと、個人で稼ぐこと、何かしらのビジネスを一度立ち上げることの３つ。
+                      専修大学ネットワーク情報学部４年 ２１歳 休学中　中〜大学までをハンドボール部に所属。部活動引退後、webエンジニア兼映像クリエイターとして活動中。動画であれば、Youtube編集から広告動画制作まで幅広い仕事受けます。webサイトは主にフロントのデザイン・コーディング。ワードプレス化やシステムに関してはお問い合わせください。
                     </p>
-                    <div class="carrer box_shadow">
+                    <div id="js-show-popup" class="carrer box_shadow">
                       <h3>I'm a member of...</h3>
                       <ul>
-                        <li>★MICインターン/映像（now）</li>
                         <li>★いえらぶアルバイト/webエンジニア（now）</li>
-                        <li>★黒崎BASEインターン（now）</li>
                         <li>★ぐろーまる/ボランティアNICE広報（now）</li>
+                        <li>★MICインターン/映像・マーケティング</li>
                         <li>★GeekSalon/プログラミングスクール</li>
                         <li>★CMC_WPL/人生を考える学校<br></li>
                         <li>★小田切プロジェクトweb＋映像担当<br></li>
@@ -92,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="skills scroll-fade-row">
+        <div id="skills" class="scroll-fade-row">
           <div class="skill">
             <h3>English</h3>
             <i class="fas fa-language skill_icon"></i>
@@ -107,10 +166,9 @@
             <h3>Programming</h3>
             <i class="fas fa-laptop-code skill_icon"></i>
             <p>
-              大学１年次に初めてプログラミングに触れる
-              ２年次にボランティア団体ゆっぽの会のサイトを制作し、
+              大学１年次に初めてプログラミングに触れる。
               ３年次では小田切プロジェクトのサイトを制作した。
-              プログラミングスクールで企業から賞を獲得。
+              プログラミングスクールでは就活サイトを制作し、企業賞を獲得。
               現在はwebエンジニアとしてアルバイト中。
             </p>
           </div>
@@ -121,13 +179,15 @@
               ２年次に映像制作を始める。授業での映像制作を経て、
               ３年次にはプロジェクションマッピングのプロジェクトに参画する。
               作った映像はインスタグラムにて投稿。
-              映像制作でのアルバイト経験あり。
+              映像編集・撮影・漫画動画の実務経験あり。
             </p>
           </div>
         </div>
     </div>
 
-  <section id="works"></section>
+  <section id="works">
+
+  </section>
   <div class="container">
     <div class="portfolio_head">
       <h1>Portfolio</h1>
@@ -139,8 +199,8 @@
         
       </div>
       <div class="web_works_right">
-        <a href="http://alinkoayuayu.html.xdomain.jp/"><img src="img/portfolio/yuppono.png" alt="姿勢ボランティア　ゆっぽの会"></a>
         <a href="https://jobhuntkakeru.herokuapp.com/"><img src="img/portfolio/jobhunt.png" alt="就活アプリ　Job Hunt"></a>
+        <a href="http://alinkoayuayu.html.xdomain.jp/"><img src="img/portfolio/yuppono.png" alt="姿勢ボランティア　ゆっぽの会"></a>
       </div>
     </div>
     <div class="portfolio_head">
